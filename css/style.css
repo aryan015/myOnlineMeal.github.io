@@ -1,0 +1,250 @@
+/*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*css variable*/
+:root {
+  --background-color: #eee;
+}
+body {
+  background-color: #eee;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+/* Navigation Bar: logo and Image */
+#logo {
+  margin: 0px 40px;
+}
+
+#logo img {
+  height: 56px;
+  margin: 3px 6px;
+  border-radius: 200px;
+  filter: sepia(100%);
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/*Home Section*/
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 452px;
+  background-color: rgba(255, 255, 255, 0.319);
+  color: black;
+  font-family: sans-serif;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/hero-img.jpg") no-repeat center center/cover;
+  height: calc(452px + 66px);
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  text-align: center;
+}
+
+#home p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Services Section */
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 20px;
+  margin: 3px 6px;
+  border-radius: 23px;
+  background-color: #f2f2f2;
+}
+
+#services .box img {
+  height: 130px;
+  display: block;
+  margin: auto;
+}
+
+#services .box > p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #services{}
+#services{}
+#services{} */
+
+/* Clients Classes */
+#client-section {
+  position: relative;
+  background-color: rgba(216, 216, 216, 0.109);
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../bg.jpg");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  padding: 34px;
+}
+
+#clients img {
+  height: 124px;
+}
+#contact {
+  position: relative;
+  background-color: rgba(59, 58, 54, 0.224);
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background: url(../img/contact.jpg) no-repeat center center/cover;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin: 0.75em;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+  border: 1px solid black;
+}
+#contact-box input:focus {
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 103%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+  border: 1px solid black;
+  margin-top: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(223, 223, 223);
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-bottom: 0.1em;
+}
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+/* utility classes */
+.h-primary {
+  font-size: 2.2rem;
+  padding: 17px;
+  /* margin-top:2px; */
+}
+
+.h-secondary {
+  font-size: 1.5rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
